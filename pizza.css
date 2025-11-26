@@ -1,0 +1,62 @@
+/* Estilos gerais */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: rgb(215, 16, 255);
+    margin-top: 50px;
+}
+
+/* Lista de navegação */
+ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+  }
+li a, .abrido{
+  display: inline-block;
+text-decoration: none;
+text-align: center;
+color: blue;
+padding: 14px 16px;
+
+}
+
+li a:hover, .drop2:hover .abrido{
+background-color: black;
+
+}
+
+/* Dropdown 1 */
+li.drop2 {
+    display: inline-block;
+    
+}
+.drop1{
+position: absolute;
+background-color: blue;
+width: 150px;
+display: none;
+}
+.drop1 a{
+color: black;
+display: block;
+text-align: left;
+text-decoration: none;
+}
+
+.drop2:hover .drop1{
+display: block;
+}
+.borda{
+border: solid 20px;
+text-shadow: 4px 3px 3px;
+}
