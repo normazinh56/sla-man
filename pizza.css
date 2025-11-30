@@ -1,62 +1,88 @@
-/* Estilos gerais */
+/* Geral */
 body {
-    background-color: rgb(255, 255, 255);
+    background: #3e2f05;
     font-family: Arial, sans-serif;
-}
-
-p {
-    color: rgb(215, 16, 255);
-    margin-top: 50px;
-}
-
-/* Lista de navegação */
-ul {
-    display: inline-block;
-    list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    color: #fff;
 }
 
-li {
-    float: left;
-  }
-li a, .abrido{
-  display: inline-block;
-text-decoration: none;
-text-align: center;
-color: blue;
-padding: 14px 16px;
-
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #1a1403;
+    border-bottom: 3px solid #d4a017;
 }
 
-li a:hover, .drop2:hover .abrido{
-background-color: black;
-
+.logo {
+    width: 60px;
+    margin-right: 20px;
 }
 
-/* Dropdown 1 */
-li.drop2 {
-    display: inline-block;
-    
-}
-.drop1{
-position: absolute;
-background-color: blue;
-width: 150px;
-display: none;
-}
-.drop1 a{
-color: black;
-display: block;
-text-align: left;
-text-decoration: none;
+
+
+.titulo {
+    margin: 0;
+    font-size: 22px;
+    color: #f8d47c;
 }
 
-.drop2:hover .drop1{
-display: block;
+
+
+.menu .btn {
+    color: #f8d47c;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
-.borda{
-border: solid 20px;
-text-shadow: 4px 3px 3px;
+
+.menu .btn:hover {
+    background: #d4a017;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+/* Cardápio */
+.cardapio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    color: black;
+    width: 240px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #0004;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 180px;
+    border-radius: 8px;
+}
+
+.preco {
+    font-weight: bold;
+    color: #d40000;
+    margin-top: 10px;
 }
