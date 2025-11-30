@@ -1,88 +1,50 @@
-/* Geral */
-body {
-    background: #3e2f05;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria</title>
+  <link rel="stylesheet" href="pizza.css">
+  <link rel="icon" href="mussarela.png" type="image/x-icon">
+</head>
 
-/* Cabeçalho */
-.header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background: #1a1403;
-    border-bottom: 3px solid #d4a017;
-}
+<body>
 
-.logo {
-    width: 60px;
-    margin-right: 20px;
-}
+<div class="header">
+  <img class="logo" src="pizza.png" alt="Logo da pizzaria">
+
+  <nav class="menu">
+    <h1 class="titulo">Point da Massa • Marquinhos Pizzaria</h1>
 
 
+      <a class="btn login" href="#">Login</a>
+    
+  </nav>
+</div>
 
-.titulo {
-    margin: 0;
-    font-size: 22px;
-    color: #f8d47c;
-}
+<div class="cardapio">
+  
+  <div class="card">
+    <img src="queji.jpg" alt="Pizza de queijo">
+    <h3>Pizza de Queijo</h3>
+    <p class="preco">R$ 9,99</p>
+  </div>
 
+  <div class="card">
+    <img src="mussarela.png" alt="Pizza de mussarela">
+    <h3>Pizza de Mussarela</h3>
+    <p class="preco">R$ 9,99</p>
+  </div>
 
+  <div class="card">
+    <img src="pizza.png" alt="Pizza" width="150">
+    <h3>Pizza Especial</h3>
+    <p class="preco">R$ 9,99</p>
+  </div>
 
-.menu .btn {
-    color: #f8d47c;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 6px;
-    transition: 0.3s;
-}
+</div>
 
-.menu .btn:hover {
-    background: #d4a017;
-    color: #000;
-}
+<script src="js.js"></script>
 
-
-
-
-
-
-
-
-
-/* Cardápio */
-.cardapio {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 40px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: white;
-    color: black;
-    width: 240px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px #0004;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 180px;
-    border-radius: 8px;
-}
-
-.preco {
-    font-weight: bold;
-    color: #d40000;
-    margin-top: 10px;
-}
+</body>
+</html>
